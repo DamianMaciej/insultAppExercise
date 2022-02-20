@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(35, 130, 255);
+}
+
+.container {
+    display: grid;
+    margin-top: 20vh;
+    grid-template-rows: minmax(10vh 20vh 10vh);
+}
+
+.insult {
+    align-self: center;
+    justify-self: center;
+    width: 70vw;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: white;
+    border: white 3px solid;
+    background-color: rgb(35, 130, 255);
+}
+
+.newInsult {
+    align-self: center;
+    justify-self: center;
+    padding: 5px;
+    margin-bottom: 20vh;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: rgb(35, 130, 255);
+    border: white 2px solid;
+    background-color: rgb(255, 255, 255);
+}
+
+.newInsult:hover {
+    border: rgb(255, 0, 0) 2px solid;
+    background-color: rgb(255, 0, 0);
+}
+
+.newInsult:active {
+    border: rgb(255, 0, 0) 2px solid;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+
+.loading {
+    align-self: center;
+    justify-self: center;
+    margin: 5vh;
+}
+
+.hand {
+    display: inline-block;
+    height: 30px;
+    margin: 5px;
+}
+
+.hand1 {
+    animation: jump-up 0.6s 0.1s linear infinite;
+}
+
+.hand2 {
+    animation: jump-up 0.6s 0.2s linear infinite;
+}
+
+.hand3 {
+    animation: jump-up 0.6s 0.3s linear infinite;
+}
+
+@keyframes jump-up {
+    50% {
+        transform: translate(0, 15px);
+    }
+}
